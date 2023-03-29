@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>9. Master mind</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Master mind</h1>
+        <p>Intenta adivinar el código secreto de tres letras sin repetir entre A, B, C, D, E, F y G.</p>
+
+        <div id="tablero">
+            <div class="fila" id="secreto"> <!-- Fila del código secreto -->
+                <label for="secreto">Secreto:</label>
+                <input type="text" id="secreto" name="inicio" value="" class="caja" readonly>
+                <input type="text" id="secreto" name="centro" value="" class="caja" readonly>
+                <input type="text" id="secreto" name="final" value="" class="caja" readonly>
+            </div>
+            <hr>
+
+            <div class="fila activa" id="turno1">
+                <label>Turno 1:</label>
+                <input type="text" value="" maxlength="1" class="caja">
+                <input type="text" value="" maxlength="1" class="caja">
+                <input type="text" value="" maxlength="1" class="caja">
+                <span class="numero"></span>
+                <span class="numero"></span>
+            </div>
+
+            <div class="fila inactiva" id="turno2">
+                <label>Turno 2:</label>
+                <input type="text" value="" maxlength="1" class="caja">
+                <input type="text" value="" maxlength="1" class="caja">
+                <input type="text" value="" maxlength="1" class="caja">
+                <span class="numero"></span>
+                <span class="numero"></span>
+            </div>
+
+            <div class="fila inactiva" id="turno3">
+                <label>Turno 3:</label>
+                <input type="text" value="" maxlength="1" class="caja">
+                <input type="text" value="" maxlength="1" class="caja">
+                <input type="text" value="" maxlength="1" class="caja">
+                <span class="numero"></span>
+                <span class="numero"></span>
+            </div>
+
+            <div class="fila inactiva" id="turno4">
+                <label>Turno 4:</label>
+                <input type="text" value="" maxlength="1" class="caja">
+                <input type="text" value="" maxlength="1" class="caja">
+                <input type="text" value="" maxlength="1" class="caja">
+                <span class="numero"></span>
+                <span class="numero"></span>
+            </div>
+
+            <div class="fila inactiva" id="turno5">
+                <label>Turno 5:</label>
+                <input type="text" value="" maxlength="1" class="caja">
+                <input type="text" value="" maxlength="1" class="caja">
+                <input type="text" value="" maxlength="1" class="caja">
+                <span class="numero"></span>
+                <span class="numero"></span>
+            </div>
+
+            <div class="fila inactiva" id="turno6">
+                <label>Turno 6:</label>
+                <input type="text" value="" maxlength="1" class="caja">
+                <input type="text" value="" maxlength="1" class="caja">
+                <input type="text" value="" maxlength="1" class="caja">
+                <span class="numero"></span>
+                <span class="numero"></span>
+            </div>
+
+            <div class="fila inactiva" id="turno7">
+                <label>Turno 7:</label>
+                <input type="text" value="" maxlength="1" class="caja">
+                <input type="text" value="" maxlength="1" class="caja">
+                <input type="text" value="" maxlength="1" class="caja">
+                <span class="numero"></span>
+                <span class="numero"></span>
+            </div>
+
+            <div class="fila inactiva" id="turno8">
+                <label>Turno 8:</label>
+                <input type="text" value="" maxlength="1" class="caja">
+                <input type="text" value="" maxlength="1" class="caja">
+                <input type="text" value="" maxlength="1" class="caja">
+                <span class="numero"></span>
+                <span class="numero"></span>
+            </div>
+        </div>
+        <hr>
+        <button id="comprobar" class="key" onclick="calcula()">Comprobar</button>
+        <button id="reiniciar" class="key" onclick="reiniciar()">Reiniciar</button>
+        <hr>
+        <p>En la respuesta después de comprobar, el primer número indica la cantidad de letras correctas. El segundo número indica la cantidad de letras en posición correcta.</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

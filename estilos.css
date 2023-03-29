@@ -1,0 +1,47 @@
+  .contenedor {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+
+  .key {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .key:hover {
+    background-color: #c68181;
+  }
+  
+  .key:active {
+    background-color: #dc4141;
+    box-shadow: inset 0 0 5px rgba(45, 12, 206, 0.8);
+  }
+
+  .caja {
+    width: 4em;
+    text-align: center;
+  }
+
+  .fila.inactiva input {
+    background-color: #b4abab;
+    pointer-events: none;
+  }
+  
+  .fila.activa input {
+    background-color: white;
+    pointer-events: auto;
+  }
+
+  input {
+    text-transform: uppercase;
+  }
