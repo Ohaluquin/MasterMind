@@ -79,7 +79,7 @@
   }
 
   body {
-    background-image: url('fondo.png');
+    background-image: url('./fondo.png');
     backdrop-filter: blur(4px);
     background-size: cover;
     background-repeat: no-repeat;
