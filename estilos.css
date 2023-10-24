@@ -6,10 +6,35 @@
   
   h1 {
     text-align: center;
+    text-shadow: 2px 2px 4px #bf0000;
+    color: rgb(32, 0, 0);
+  }
+
+  p {
+    font-size: x-large;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px #bf0000;
+    color: rgb(23, 0, 0);
+  }
+
+  label {
+    font-size: larger;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px #bf0000;
+    color: rgb(25, 0, 0);
+  }
+
+  span {
+    color: rgb(58, 0, 0);
+    text-shadow: 2px 2px 4px #bf0000;
+    font-size: larger;
+    font-weight: bold;
   }
 
   .key {
-    background-color: #fff;
+    background-color: #fff;;
+    color: rgb(107, 5, 5);
+    font-size: 24px;
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 10px;
@@ -45,3 +70,11 @@
   input {
     text-transform: uppercase;
   }
+
+body {
+    background-image: url('fondo.png');
+    backdrop-filter: blur(4px);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
