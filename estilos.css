@@ -58,8 +58,8 @@
     background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 5px;
-    padding: 10px;
-    font-size: 20px;
+    padding: 6px;
+    font-size: 16px;
     cursor: pointer;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   }
@@ -77,3 +77,11 @@
   input {
     text-transform: uppercase;
   }
+
+  body {
+    background-image: url('fondo.png');
+    backdrop-filter: blur(4px);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}

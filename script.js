@@ -37,28 +37,21 @@ function calcula() {
     let siguienteFila = filaActiva.nextElementSibling;
     if (posicionesCorrectas === codigoSecreto.length) {
         muestraVictoria();
-    } else if (!siguienteFila) {
-        // El usuario ha agotado sus intentos
+    } else if (!siguienteFila) { // El usuario ha agotado sus intentos
         alert('Lo siento, has agotado tus intentos. ¡Mejor suerte la próxima vez!');
     }
-    if (siguienteFila) {
+    else if (siguienteFila) {
         siguienteFila.classList.remove('inactiva');
         siguienteFila.classList.add('activa');
     }
 }
 
-function muestraVictoria() {
-  // Descubre la clave secreta
-  let code = document.querySelectorAll('#secreto input');
-  for (let i = 0; i < code.length; i++) {
-    code[i].value = codigoSecreto[i];
-  }
-  //Muestra un mensaje de victoria
-  alert('¡Felicidades! Has adivinado el código secreto:' + code[0].value + code[1].value + code[2].value);
+function muestraVictoria() {  //Muestra un mensaje de victoria
+  alert('¡Felicidades! Has adivinado el código secreto:');
+  reiniciar();
 }
 
-function reiniciar() {
-    // Limpia el tablero
+function reiniciar() {    // Limpia el tablero
     let inputs = document.querySelectorAll('.fila input');
     inputs.forEach(input => {
         input.value = '';
@@ -78,7 +71,7 @@ function reiniciar() {
     // Activa el primer renglón y desactiva los demás
     let filas = document.querySelectorAll('.fila');
     filas.forEach((fila, index) => {
-        if (index === 1) {
+        if (index === 0) {
             fila.classList.remove('inactiva');
             fila.classList.add('activa');
         } else {
