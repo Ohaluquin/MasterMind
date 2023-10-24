@@ -55,6 +55,13 @@
   .caja {
     width: 4em;
     text-align: center;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   }
 
   .fila.inactiva input {
@@ -70,11 +77,3 @@
   input {
     text-transform: uppercase;
   }
-
-body {
-    background-image: url('fondo.png');
-    backdrop-filter: blur(4px);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
