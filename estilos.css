@@ -4,12 +4,7 @@
   text-align: center;
   border: 2px solid #ccc;
   padding: 20px;
-  background-color: rgba(
-    255,
-    255,
-    255,
-    0.8
-  ); /* Más claro y con mayor transparencia */
+  background-color: rgba(255,255,255,0.9); /* Más claro y con mayor transparencia */
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Suave sombra alrededor del contenedor */
 }
@@ -82,7 +77,6 @@ input {
 
 body {
   background-image: url("./fondo.png");
-  backdrop-filter: blur(4px);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
